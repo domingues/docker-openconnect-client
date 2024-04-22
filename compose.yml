@@ -1,0 +1,8 @@
+services:
+  vpn:
+    build: .
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+    env_file:
+      - .env
