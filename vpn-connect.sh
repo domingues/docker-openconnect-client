@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo $VPN_PASSWORD | openconnect \
+echo $PASSWORD | openconnect \
   --protocol=$PROTOCOL \
   --disable-ipv6 \
   --script=./vpn-script-only-private-routes.sh \
